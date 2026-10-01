@@ -80,37 +80,33 @@ a{color:inherit}main{width:min(1120px,calc(100% - 32px));margin:auto;padding:28p
     </div>
   </section>
 
-  <section class="qr-panel panel"><div id="qr-holder"></div><div class="qr-text"><h2>Escanea para abrir en el móvil</h2><p>Accede a esta página rápidamente desde cualquier dispositivo.</p><span class="url-chip" id="url-chip">cargando enlace…</span></div></section>
+  <section class="qr-panel panel"><div id="qr-holder"><img src="data:image/png;base64,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" alt="Código QR para abrir el portal" width="150" height="150"></div><div class="qr-text"><h2>Escanea para abrir en el móvil</h2><p>Accede a esta página rápidamente desde cualquier dispositivo.</p><span class="url-chip" id="url-chip">cargando enlace…</span></div></section>
   <footer><a href="https://www.ieszaframagon.com/" target="_blank" rel="noopener">IES Zaframagón, Olvera</a> · Portal de accesos</footer>
 </main>
 
 <script>
 (function(){
+  const FIXED_URL = "https://hbarbae775-spec.github.io/AppIESZAFRAMAGON/";
   const quotes=["Cada día es una nueva oportunidad para aprender algo distinto.","El esfuerzo de hoy construye los resultados de mañana.","Equivocarse también es parte de aprender.","Un pequeño paso constante vale más que una gran prisa puntual.","La curiosidad es el primer paso hacia el conocimiento.","Lo que se practica con constancia, se acaba dominando.","Cada reto es una oportunidad disfrazada.","Enseñar es sembrar algo que no siempre se ve crecer enseguida.","El buen humor también enseña.","Nadie aprende solo: todos aprendemos entre todos.","El error de hoy es la lección de mañana.","La paciencia es una herramienta de trabajo tan útil como cualquier otra.","Cada pregunta bien hecha abre una puerta nueva.","El trabajo en equipo multiplica lo que cada uno sabe.","La constancia convierte lo difícil en rutina.","Hoy es un buen día para intentarlo de nuevo."];
   function quote(){const e=document.getElementById('quote-text');if(!e)return;const n=new Date(),s=new Date(n.getFullYear(),0,1),d=Math.floor((n-s)/86400000);e.textContent=quotes[d%quotes.length];}
   function weather(){
-    const icon=document.getElementById('weather-icon');
-    const temp=document.getElementById('weather-temp');
-    const desc=document.getElementById('weather-desc');
-    const range=document.getElementById('weather-range');
+    const icon=document.getElementById('weather-icon'),temp=document.getElementById('weather-temp'),desc=document.getElementById('weather-desc'),range=document.getElementById('weather-range');
     if(!icon||!temp||!desc||!range)return;
     const codes={0:['Despejado','☀️'],1:['Principalmente despejado','🌤️'],2:['Parcialmente nublado','⛅'],3:['Nublado','☁️'],45:['Niebla','🌫️'],48:['Niebla','🌫️'],51:['Llovizna','🌦️'],53:['Llovizna','🌦️'],55:['Llovizna intensa','🌧️'],61:['Lluvia débil','🌧️'],63:['Lluvia','🌧️'],65:['Lluvia fuerte','🌧️'],71:['Nieve débil','🌨️'],73:['Nieve','🌨️'],75:['Nieve fuerte','🌨️'],80:['Chubascos','🌦️'],81:['Chubascos','🌦️'],82:['Chubascos fuertes','🌧️'],95:['Tormenta','⛈️'],96:['Tormenta con granizo','⛈️'],99:['Tormenta con granizo','⛈️']};
-    const qrUrl = "https://hbarbae775-spec.github.io/AppIESZAFRAMAGON/";
-    fetch(url,{cache:'no-store'})
-      .then(r=>{if(!r.ok)throw new Error('weather');return r.json();})
-      .then(data=>{
-        const cur=data.current||{}; const info=codes[cur.weather_code]||['Tiempo variable','🌡️'];
-        icon.textContent=info[1]; temp.textContent=Math.round(Number(cur.temperature_2m))+'°C'; desc.textContent=info[0];
-        const max=data.daily?.temperature_2m_max?.[0], min=data.daily?.temperature_2m_min?.[0];
-        range.textContent=(max!=null&&min!=null)?`Máx ${Math.round(max)}° · Mín ${Math.round(min)}°`:'Actualizado ahora';
-      })
-      .catch(()=>{
-        icon.textContent='🌤️'; temp.textContent=''; desc.textContent='Consulta el tiempo de Olvera';
-        range.innerHTML='<a href="https://www.eltiempo.es/olvera.html" target="_blank" rel="noopener">Ver previsión completa →</a>';
-      });
+    const url='https://api.open-meteo.com/v1/forecast?latitude=36.9348&longitude=-5.2661&current=temperature_2m,weather_code&daily=temperature_2m_max,temperature_2m_min&timezone=Europe%2FMadrid&forecast_days=1';
+    fetch(url,{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('weather');return r.json();}).then(data=>{
+      const cur=data.current||{}, info=codes[cur.weather_code]||['Tiempo variable','🌡️'];
+      icon.textContent=info[1]; temp.textContent=Math.round(Number(cur.temperature_2m))+'°C'; desc.textContent=info[0];
+      const max=data.daily?.temperature_2m_max?.[0],min=data.daily?.temperature_2m_min?.[0];
+      range.textContent=(max!=null&&min!=null)?`Máx ${Math.round(max)}° · Mín ${Math.round(min)}°`:'Actualizado ahora';
+    }).catch(()=>{
+      icon.textContent='🌤️'; temp.textContent=''; desc.textContent='No se pudo cargar el tiempo';
+      range.innerHTML='<a href="https://www.eltiempo.es/olvera.html" target="_blank" rel="noopener">Ver previsión de Olvera →</a>';
+    });
   }
-  function qr(){const h=document.getElementById('qr-holder'),c=document.getElementById('url-chip');if(!h||!c)return;const u=location.href;c.textContent=u;const fallback=()=>{h.innerHTML='<a href="'+u.replace(/"/g,'&quot;')+'" target="_blank" rel="noopener" style="display:grid;place-items:center;width:100%;height:100%;color:#163a70;text-decoration:none;font-weight:800;text-align:center;font-size:.72rem">ABRIR<br>PÁGINA</a>';};const make=()=>{if(typeof QRCode==='undefined'){fallback();return;}try{h.innerHTML='';new QRCode(h,{text:u,width:112,height:112,correctLevel:QRCode.CorrectLevel.M});}catch(e){fallback();}};if(window.QRCode){make();return;}const sc=document.createElement('script');sc.src='https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js';sc.onload=make;sc.onerror=fallback;document.head.appendChild(sc);}
-  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{quote();weather();qr();});else{quote();weather();qr();}
+  function qr(){const c=document.getElementById('url-chip');if(c)c.textContent=FIXED_URL;}
+  function init(){quote();weather();qr();}
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
 })();
 </script>
 </body>
