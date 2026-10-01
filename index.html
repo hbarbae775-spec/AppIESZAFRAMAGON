@@ -18,7 +18,10 @@ a{color:inherit}main{width:min(1120px,calc(100% - 32px));margin:auto;padding:28p
 .hero{position:relative;min-height:390px;overflow:hidden;border-radius:32px;margin-bottom:24px;background:#183c70;box-shadow:var(--shadow);display:flex;align-items:flex-end;padding:34px;color:#fff}
 .hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(12,35,69,.92) 0%,rgba(17,54,101,.62) 48%,rgba(17,54,101,.18) 100%),url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1600&q=85') center/cover;transform:scale(1.01)}
 .hero::after{content:"";position:absolute;width:300px;height:300px;border:1px solid rgba(255,255,255,.22);border-radius:50%;right:-100px;top:-90px;box-shadow:0 0 0 35px rgba(255,255,255,.05),0 0 0 70px rgba(255,255,255,.035)}
-.hero-content{position:relative;z-index:2;max-width:650px}.hero-logo{display:block;width:min(270px,70vw);max-height:115px;object-fit:contain;object-position:left center;margin-bottom:18px;filter:drop-shadow(0 8px 18px rgba(0,0,0,.18))}.eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.24);backdrop-filter:blur(8px);padding:8px 12px;border-radius:999px;font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em}.hero h1{font-family:"Spectral",Georgia,serif;font-size:clamp(2.2rem,5vw,4rem);line-height:.98;margin:14px 0 12px;max-width:680px}.hero p{font-size:1.03rem;line-height:1.55;margin:0;max-width:56ch;color:rgba(255,255,255,.88)}
+.hero-content{position:relative;z-index:2;max-width:650px}
+/* AQUÍ SE HA MEJORADO EL ESTILO DEL LOGO PARA QUE DESTAQUE CON UN FONDO BLANCO */
+.hero-logo{display:block;width:min(290px,80vw);max-height:120px;object-fit:contain;object-position:center;margin-bottom:18px;background:rgba(255,255,255,0.95);padding:12px 18px;border-radius:16px;box-shadow:0 8px 18px rgba(0,0,0,.18)}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.24);backdrop-filter:blur(8px);padding:8px 12px;border-radius:999px;font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em}.hero h1{font-family:"Spectral",Georgia,serif;font-size:clamp(2.2rem,5vw,4rem);line-height:.98;margin:14px 0 12px;max-width:680px}.hero p{font-size:1.03rem;line-height:1.55;margin:0;max-width:56ch;color:rgba(255,255,255,.88)}
 .hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}.hero-btn{display:inline-flex;align-items:center;gap:8px;padding:11px 15px;border-radius:13px;text-decoration:none;font-weight:700;font-size:.9rem}.hero-btn.primary{background:#fff;color:var(--brand2)}.hero-btn.secondary{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);color:#fff}
 .top-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:18px;margin-bottom:26px}.panel{background:rgba(255,255,255,.88);border:1px solid var(--line);border-radius:var(--radius);box-shadow:0 10px 30px rgba(21,35,58,.06)}
 .quote-banner{padding:22px 24px;border-left:5px solid var(--gold);background:linear-gradient(135deg,#fffaf0,#fff);}.quote-label{margin:0 0 6px;color:var(--muted);font-size:.75rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em}.quote-text{margin:0;font-family:"Spectral",Georgia,serif;font-style:italic;font-size:1.15rem;line-height:1.45}
@@ -38,7 +41,6 @@ a{color:inherit}main{width:min(1120px,calc(100% - 32px));margin:auto;padding:28p
     <div class="hero-content">
       <span class="eyebrow">IES Zaframagón · Olvera</span>
       <a href="https://www.ieszaframagon.com/" target="_blank" rel="noopener" aria-label="Ir a la web del IES Zaframagón">
-        <!-- ¡Aquí está el cambio principal con el logo! -->
         <img class="hero-logo" alt="IES Zaframagón" src="zaframagonv2.png">
       </a>
       <h1 id="hero-title">Todo el centro,<br>más cerca de ti.</h1>
